@@ -248,7 +248,7 @@ var casServerSetup = function(done){
       key: fs.readFileSync(__dirname + '/certs/localhost.key'),
       cert: fs.readFileSync(__dirname + '/certs/localhost.crt')
     }, app).listen(1337, done);
-    server.setTimeout(50);
+    // server.setTimeout(50);
     return server;
 };
 
